@@ -3,6 +3,8 @@
 ## Project Overview
 This project implements an autoregressive generative model (PixelCNN) on the MNIST dataset of handwritten digits. The goal is to model the distribution of pixel intensities and generate new, realistic digit images pixel by pixel.
 
+**NOTE:** All the implementation and experiments for the PixelCNN model on the MNIST dataset are located at `/notebooks/PixelCNN-MNIST.ipynb`.
+
 ## Mathematical Background
 Autoregressive models factorize the joint probability distribution into a product of conditional distributions:
 
@@ -46,14 +48,14 @@ The model was trained for 10 epochs, with careful monitoring of both training an
 Training loss decreased from 0.1243 to 0.0761, while test loss improved from 0.0864 to 0.0764, indicating good generalization without overfitting.
 
 <div align="center">
-    <img src="results/loss_curve.png" alt="Training and Testing Loss" width="100%">
+    <img src="results/loss_curve.png" alt="Training and Testing Loss" width="80%">
 </div>
 
 
 **Generated samples:**
 
 <div align="center">
-    <img src="results/samples.png" alt="Generated Samples" width="100%">
+    <img src="results/samples.png" alt="Generated Samples" width="80%">
 </div>
 
 The model quickly converges in early epochs and produces recognizable digit shapes, indicating strong autoregressive modeling of pixel dependencies.
